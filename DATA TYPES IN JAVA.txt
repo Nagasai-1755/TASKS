@@ -1,0 +1,33 @@
+DATA TYPES IN JAVA
+
+
+1. BYTE      
+            Size =1 byte
+             Byte can stores whole numbers from  -128 to 127
+
+2. SHORT
+           Size =2 bytes
+           Short can store whole numbers from -32,76 to 32,767
+
+3. INT
+          Size = 4 bytes
+          Int can store whole numbers from -2,147,483,648 to 2,147,483,647
+
+4. LONG
+          Size = 8 bytes
+          Long can store whole numbers from -9,223,,372,036,854,775,808 to 9,223,372,036,854,775,807
+
+5.FLOAT
+          Size = 4 bytes
+          Float can store fractional numbers. It can stores from 6 to 7 decimal digits
+
+6.DOUBLE
+           Size = 8 bytes
+           Double stores fractional numbers. It can stores upto 15 decimal digits
+
+7.BOOLEAN
+           Size = 1 bit
+            Boolean stores TRUE or FALSE values  1 = TRUE, 0 = FALSE
+8.CHAR
+             Size = 2 bytes
+             Char can stores character/ASCII values
