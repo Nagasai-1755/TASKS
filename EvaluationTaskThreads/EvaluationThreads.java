@@ -1,13 +1,16 @@
 package Threads;
 
 class Message {
-    public synchronized void writing() throws InterruptedException {
+	String msg;
+    public synchronized void writing(String message) throws InterruptedException {
+    	msg = message;
         System.out.println("sending the message");
         wait();
     }
 
     public synchronized void reading() {
         System.out.println("Recieving the message");
+        System.out.println(msg);
         notify();
     }
 }
@@ -21,7 +24,7 @@ class Sender extends Thread {
 
     public void run() {
         try {
-            m.writing();
+            m.writing("hello");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -37,7 +40,7 @@ class Receiver extends Thread {
 
     public synchronized void run() {
     	try {
-			Thread.currentThread().sleep(7000);
+			Thread.sleep(7000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
